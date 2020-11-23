@@ -6,15 +6,15 @@
  */
 
 /*jslint browser: true*/
-/*global $, window, console*/
+/*global $, window*/
 $(function () {
 	'use strict';
 	/* loading page start */
-    window.setTimeout(function() {
+    window.setTimeout(function () {
         $('.loading_page').fadeOut(1000);
     }, 18000);
 
-    window.setInterval(function() {
+    window.setInterval(function () {
         $('.arrow-right').click();
     }, 3000);
 
@@ -74,16 +74,16 @@ $(function () {
 	
 	/* banner map start */
 	$('.map-icon.hover').mouseenter(function () {
-		var index = $(this).index();
-		var active = $('.map-icon.active').index();
+		var index = $(this).index(),
+			active = $('.map-icon.active').index();
 		if (index !== active) {
-			$(this).find('img').attr('src', '../img/map_icon02.png');	
+			$(this).find('img').attr('src', '../img/map_icon02.png');
 		}
 	});
 	
 	$('.map-icon.hover').mouseleave(function () {
-		var index = $(this).index();
-		var active = $('.map-icon.active').index();
+		var index = $(this).index(),
+			active = $('.map-icon.active').index();
 		if (index !== active) {
 			$(this).find('img').attr('src', '../img/map_icon01.png');
 		}
@@ -93,12 +93,12 @@ $(function () {
 	$('.map-icon').on('click', function () {
 		$('.map-icon').removeClass('active');
 		$('.map-icon').find('img').attr('src', '../img/map_icon01.png');
-		$(this).addClass('active');		
+		$(this).addClass('active');
 		$(this).find('img').attr('src', '../img/map_icon03.png');
 		
 		var id = $(this).attr('data-id');
 		$('.banner-text').find('.text-box').removeClass('active');
-		$('.banner-text').find('[data-id='+id+']').addClass('active');
+		$('.banner-text').find('[data-id=' + id + ']').addClass('active');
 	});
 	
 	$('.map-icon').eq(0).click();
