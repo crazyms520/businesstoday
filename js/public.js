@@ -77,7 +77,7 @@ $(function () {
 		var index = $(this).index(),
 			active = $('.map-icon.active').index();
 		if (index !== active) {
-			$(this).find('img').attr('src', '../img/map_icon02.png');
+			$(this).find('img').attr('src', 'img/map_icon02.png');
 		}
 	});
 	
@@ -85,16 +85,16 @@ $(function () {
 		var index = $(this).index(),
 			active = $('.map-icon.active').index();
 		if (index !== active) {
-			$(this).find('img').attr('src', '../img/map_icon01.png');
+			$(this).find('img').attr('src', 'img/map_icon01.png');
 		}
 		
 	});
 	
 	$('.map-icon').on('click', function () {
 		$('.map-icon').removeClass('active');
-		$('.map-icon').find('img').attr('src', '../img/map_icon01.png');
+		$('.map-icon').find('img').attr('src', 'img/map_icon01.png');
 		$(this).addClass('active');
-		$(this).find('img').attr('src', '../img/map_icon03.png');
+		$(this).find('img').attr('src', 'img/map_icon03.png');
 		
 		var id = $(this).attr('data-id');
 		$('.banner-text').find('.text-box').removeClass('active');
