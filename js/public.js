@@ -10,13 +10,13 @@
 $(function () {
 	'use strict';
 	/* loading page start */
-    window.setTimeout(function () {
-        $('.loading_page').fadeOut(1000);
-    }, 18000);
-
-    window.setInterval(function () {
-        $('.arrow-right').click();
-    }, 3000);
+//    window.setTimeout(function () {
+//        $('.loading_page').fadeOut(1000);
+//    }, 18000);
+//
+//    window.setInterval(function () {
+//        $('.arrow-right').click();
+//    }, 3000);
 
     $('.loading_page_btn').on('click', function () {
         $('.loading_page').fadeOut(1000);
@@ -112,18 +112,17 @@ $(function () {
     });
 
     // 光箱
-    $(function () {
-        // $('.showModel').click(function () {
-        //     $('#myModel').addClass('showModel')
+		
+	$('.showModel').click(function () {
+		$('#myModel').addClass('showModel');
 
-        //     $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show')
-        // })
+		$('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show');
+	});
 
-        // $('.btn_close, .close').click(function () {
-        //     $('#myModel').removeClass('showModel')
-        // })
+	$('.btn_close, .close').click(function () {
+		$('#myModel').removeClass('showModel');
+	});
 
-    });
 
     $(".history-content").scroll(function () {
         $('ul#time-line li').each(function () {
