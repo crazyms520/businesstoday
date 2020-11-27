@@ -102,6 +102,54 @@ $(function () {
 	});
 	
 	$('.map-icon').eq(0).click();
+	
+	$('.map-arrow-left').on('click', function () {
+		var count = $('.banner-text > .text-box').length,
+			id = $('.banner-text').find('.active').attr('data-id');
+		id = parseInt(id, 10) - 1;
+		if (id <= 0) {
+			id = count;
+		}
+		$('.map-icon').eq((id - 1)).click();
+		
+	});
+	
+	$('.map-arrow-right').on('click', function () {
+		var count = $('.banner-text > .text-box').length,
+			id = $('.banner-text').find('.active').attr('data-id');
+		id = parseInt(id, 10) + 1;
+		if (id > count) {
+			id = 1;
+		}
+		$('.map-icon').eq((id - 1)).click();
+	});
+	
+	$('.control-arrow-left').on('click', function () {
+		var count = $('.control-box > .control-bar').length,
+			id = $('.control-box').find('.active').attr('data-id');
+		id = parseInt(id, 10) - 1;
+		if (id <= 0) {
+			id = count;
+		}
+		$('.control-box').find('.control-bar').removeClass('active');
+		$('.control-box').find('[data-id=' + id + ']').addClass('active');
+		$('.mob-container').find('.mob-c-box').removeClass('show');
+		$('.mob-container').find('.mb' + id).addClass('show');
+	});
+	
+	$('.control-arrow-right').on('click', function () {
+		var count = $('.control-box > .control-bar').length,
+			id = $('.control-box').find('.active').attr('data-id');
+		id = parseInt(id, 10) + 1;
+		if (id > count) {
+			id = 1;
+		}
+		$('.control-box').find('.control-bar').removeClass('active');
+		$('.control-box').find('[data-id=' + id + ']').addClass('active');
+		$('.mob-container').find('.mob-c-box').removeClass('show');
+		$('.mob-container').find('.mb' + id).addClass('show');
+	});
+	
 	/* banner map end */
     $('ul#time-line li').each(function () {
         var stop = $(window).scrollTop() + $(window).height() / 1.2,
@@ -118,9 +166,16 @@ $(function () {
 
 		$('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show');
 	});
+	
+	$('.showModel').click(function () {
+		$('#myModel_m').addClass('showModel');
+
+		$('#myModel_m .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show');
+	});
 
 	$('.btn_close, .close').click(function () {
 		$('#myModel').removeClass('showModel');
+		$('#myModel_m').removeClass('showModel');
 	});
 
 
