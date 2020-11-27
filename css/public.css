@@ -328,6 +328,8 @@ body .sea .container .mob-container { display: none; }
 body .sea .container .mob-container .mob-c-box { display: none; }
 body .sea .container .mob-container .mob-c-box.show { display: flex; flex-direction: column; justify-content: space-around; align-items: center; width: 100%; height: 100%; }
 @media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box.show { justify-content: center; } }
+body .sea .container .mob-container .mob-c-box .sea-img .m_popup03 { width: 280px; }
+body .sea .container .mob-container .mob-c-box .sea-img .m_popup05 { width: 280px; height: 400px; text-align: center; }
 body .sea .container .mob-container .mob-c-box .sea-img img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
 body .sea .container .mob-container .mob-c-box .sea-text { position: relative; }
 body .sea .container .mob-container .mob-c-box .sea-text > .text-box { z-index: 3; }
@@ -371,7 +373,7 @@ body .sea .container .mob-container .control-box .control-bar:nth-child(6) { mar
 body .sea .container .mob-container .control-box .control-arrow-right { width: 0; height: 0; border-style: solid; border-width: 25px 0 25px 15px; border-color: transparent transparent transparent #58ced3; cursor: pointer; }
 body .sea .container .mob-container #myModel_m { display: none; position: fixed; z-index: 999; left: 0; top: 0; bottom: 0; right: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
 body .sea .container .mob-container #myModel_m.showModel { display: inline-block; overflow: hidden; }
-body .sea .container .mob-container #myModel_m .ac_outer { width: 100%; }
+body .sea .container .mob-container #myModel_m .ac_outer { width: 100%; height: 100%; }
 body .sea .container .mob-container #myModel_m .ac_outer .model_boxs { display: none; width: 100vw; height: 100vh; background-color: rgba(7, 31, 82, 0.7); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 body .sea .container .mob-container #myModel_m .ac_outer .model_boxs.show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { body .sea .container .mob-container #myModel_m .ac_outer .model_boxs { max-width: auto; margin: 0; height: 100%; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
