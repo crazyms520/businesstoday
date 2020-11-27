@@ -422,7 +422,7 @@ body {
 				&.e01 {
 					top: 38%;
 					right: 45%;
-					
+
 					@include range-width(0, 451px) {
 						top: 32%;
 						right: 38%;
@@ -432,7 +432,7 @@ body {
 				&.e02 {
 					top: 24%;
 					right: 25%;
-					
+
 					@include range-width(0, 451px) {
 						top: 18%;
 						right: 19%;
@@ -564,13 +564,13 @@ body {
 
 			.logo {
 				margin: 0;
-				
+
 				@include range-width(0, 451px) {
 					> img {
 						width: auto;
 						height: auto;
 						max-width: 100%;
-						max-height: 100%;	
+						max-height: 100%;
 					}
 				}
 			}
@@ -581,7 +581,7 @@ body {
 				@include range-width(0, 769px) {
 					display: inline-block;
 				}
-				
+
 				.m-menu-list {
 					display: none;
 				}
@@ -649,7 +649,7 @@ body {
 					right: 0;
 					margin-right: 5%;
 				}
-				
+
 				@include range-width(0, 451px) {
 					top: 10%;
 					right: 0;
@@ -666,7 +666,7 @@ body {
 						font-size: 4rem;
 						color: white;
 						margin: 0;
-						
+
 						@include range-width(0, 451px) {
 							font-size: 2.4rem;
 						}
@@ -676,7 +676,7 @@ body {
 						margin-bottom: 0;
 						font-size: 2rem;
 						color: white;
-						
+
 						@include range-width(0, 451px) {
 							font-size: 1.2rem;
 						}
@@ -713,21 +713,22 @@ body {
 				.map-icon {
 					position: absolute;
 					cursor: pointer;
-					
+
 					@include range-width(0, 451px) {
-//						display: none;
+						//						display: none;
 					}
 
 					&.m1 {
 						top: -2%;
 						left: 10%;
+
 						@include range-width(0, 451px) {
 							top: -23%;
 						}
 
 						&.active {
 							top: -10%;
-							
+
 							@include range-width(0, 451px) {
 								top: -40%;
 							}
@@ -737,7 +738,7 @@ body {
 					&.m2 {
 						top: 15%;
 						left: 2%;
-						
+
 						@include range-width(0, 451px) {
 							top: -2%;
 							left: 0;
@@ -745,7 +746,7 @@ body {
 
 						&.active {
 							top: 7%;
-							
+
 							@include range-width(0, 451px) {
 								top: -25%;
 								left: 0;
@@ -756,7 +757,7 @@ body {
 					&.m3 {
 						top: 37%;
 						left: 8%;
-						
+
 						@include range-width(0, 451px) {
 							top: 20%;
 							left: 5%;
@@ -764,7 +765,7 @@ body {
 
 						&.active {
 							top: 30%;
-							
+
 							@include range-width(0, 451px) {
 								top: -3%;
 							}
@@ -774,7 +775,7 @@ body {
 					&.m4 {
 						top: 50%;
 						left: 13%;
-						
+
 						@include range-width(0, 451px) {
 							top: 35%;
 							left: 8%;
@@ -782,7 +783,7 @@ body {
 
 						&.active {
 							top: 43%;
-							
+
 							@include range-width(0, 451px) {
 								top: 17%;
 							}
@@ -792,14 +793,14 @@ body {
 					&.m5 {
 						top: 65%;
 						left: 21%;
-						
+
 						@include range-width(0, 451px) {
 							top: 52%;
 						}
 
 						&.active {
 							top: 58%;
-							
+
 							@include range-width(0, 451px) {
 								top: 30%;
 							}
@@ -809,14 +810,14 @@ body {
 					&.m6 {
 						top: 72%;
 						left: 32%;
-						
+
 						@include range-width(0, 451px) {
 							top: 56%;
 						}
 
 						&.active {
 							top: 64%;
-							
+
 							@include range-width(0, 451px) {
 								top: 38%;
 							}
@@ -826,12 +827,14 @@ body {
 					&.m7 {
 						top: 73%;
 						left: 46%;
+
 						@include range-width(0, 451px) {
 							top: 56%;
 						}
 
 						&.active {
 							top: 65%;
+
 							@include range-width(0, 451px) {
 								top: 38%;
 							}
@@ -883,7 +886,7 @@ body {
 				@include range-width(451px, 769px) {
 					left: calc(50% - 151px);
 				}
-				
+
 				@include range-width(0, 451px) {
 					margin: 0 2rem;
 				}
@@ -903,7 +906,7 @@ body {
 						border-color: transparent rgba(88, 206, 211, 1.00) transparent transparent;
 						cursor: pointer;
 					}
-					
+
 					@include range-width(0, 451px) {
 						left: -2rem;
 					}
@@ -924,6 +927,7 @@ body {
 						border-color: transparent transparent transparent rgba(88, 206, 211, 1.00);
 						cursor: pointer;
 					}
+
 					@include range-width(0, 451px) {
 						right: -2rem;
 					}
@@ -2034,12 +2038,13 @@ body {
 						.m_popup03 {
 							width: 280px;
 						}
-						
+
 						.m_popup05 {
 							width: 280px;
 							height: 400px;
 							text-align: center;
 						}
+
 						img {
 							width: auto;
 							height: auto;
@@ -2146,44 +2151,157 @@ body {
 						@include range-width(0, 451px) {
 							margin-top: 2rem;
 						}
-						
+
 						&.ms-2-1 {
 							position: absolute;
 							top: 25%;
 							left: 20%;
+
+							@include range-width(0, 451px) {
+								top: 30%;
+								left: 15%;
+								
+								.s-point-text {
+									position: relative;
+									&:after {
+										content: unset !important;
+									}
+									&:before {
+										content: '';
+										position: absolute;
+										top: 0;
+										left: -1rem;
+										width: 0;
+										height: 0;
+										border-style: solid;
+										border-width: 2.2rem 1rem 2.2rem 0;
+										border-color: transparent rgba(28, 73, 234, 1.00) transparent transparent;
+
+									}
+								}
+							}
 						}
-						
+
 						&.ms-2-2 {
 							position: absolute;
 							top: 50%;
 							left: 0;
+
+							@include range-width(0, 451px) {
+								top: 45%;
+								
+								.s-point-text {
+									position: relative;
+									&:after {
+										content: unset !important;
+									}
+									
+									&:before {
+										content: '';
+										position: absolute;
+										top: 0;
+										left: -1rem;
+										width: 0;
+										height: 0;
+										border-style: solid;
+										border-width: 2.2rem 1rem 2.2rem 0;
+										border-color: transparent rgba(28, 73, 234, 1.00) transparent transparent;
+
+									}
+								}
+							}
 						}
-						
+
 						&.ms-2-3 {
 							position: absolute;
 							bottom: 10%;
 							left: 50%;
+
+							@include range-width(0, 451px) {
+								bottom: 20%;
+								
+								.s-point-text {
+									position: relative;
+									&:after {
+										content: unset !important;
+									}
+									&:before {
+										content: '';
+										position: absolute;
+										top: 0;
+										left: -1rem;
+										width: 0;
+										height: 0;
+										border-style: solid;
+										border-width: 2.2rem 1rem 2.2rem 0;
+										border-color: transparent rgba(28, 73, 234, 1.00) transparent transparent;
+
+									}
+								}
+							}
 						}
-						
+
 						&.ms-3-1 {
 							position: absolute;
 							top: 30%;
 							left: 23%;
+
+							@include range-width(0, 451px) {
+								top: 25%;
+								left: 0;
+							}
 						}
+
 						&.ms-3-2 {
 							position: absolute;
 							top: 48%;
 							left: 30%;
+
+							@include range-width(0, 451px) {
+								top: 38%;
+								left: 8%;
+							}
 						}
+
 						&.ms-3-3 {
 							position: absolute;
 							top: 48%;
 							left: 70%;
+
+							@include range-width(0, 451px) {
+								top: 35%;
+								left: 55%;
+								
+								.s-point-text {
+									position: relative;
+									&:after {
+										content: unset !important;
+									}
+									&:before {
+										content: '';
+										position: absolute;
+										top: 0;
+										left: -1rem;
+										width: 0;
+										height: 0;
+										border-style: solid;
+										border-width: 2.2rem 1rem 2.2rem 0;
+										border-color: transparent rgba(28, 73, 234, 1.00) transparent transparent;
+
+									}
+								}
+							}
 						}
+
 						&.ms-3-4 {
 							position: absolute;
 							bottom: 17%;
 							left: 60%;
+
+							@include range-width(0, 451px) {
+								bottom: 20%;
+								left: 3%;
+							}
 						}
 
 						> div {
@@ -2240,7 +2358,7 @@ body {
 									border-color: transparent transparent transparent rgba(28, 73, 234, 1.00);
 
 								}
-								
+
 								&.onleft {
 									margin-right: 2rem;
 								}
@@ -2262,7 +2380,7 @@ body {
 						left: calc(50% - 180px);
 
 					}
-					
+
 					@include range-width(0, 451px) {
 						left: calc(50% - 160px);
 
@@ -2530,7 +2648,7 @@ body {
 		background-color: rgba(10, 33, 88, 1.00);
 		width: 100vw;
 		height: 1280px;
-		
+
 		@include range-width(0, 769px) {
 			height: 100vh;
 		}
@@ -2610,7 +2728,7 @@ body {
 					background-color: rgba(10, 24, 72, 1.00);
 					border-radius: 50%;
 					text-align: center;
-					
+
 					@include range-width(0, 451px) {
 						width: 100px;
 						height: 100px;
@@ -2619,7 +2737,7 @@ body {
 					> h2 {
 						font-size: 3.6rem;
 						margin-bottom: 0;
-						
+
 						@include range-width(0, 451px) {
 							font-size: 2.4rem;
 						}
@@ -2627,7 +2745,7 @@ body {
 						> span {
 							vertical-align: baseline;
 							font-size: 2.1rem;
-							
+
 							@include range-width(0, 451px) {
 								font-size: 1.6rem;
 							}
@@ -2811,7 +2929,7 @@ body {
 								background-color: rgba(10, 24, 72, 1.00);
 								border-radius: 50%;
 								text-align: center;
-								
+
 								@include range-width(0, 451px) {
 									width: 100px;
 									height: 100px;
@@ -2820,7 +2938,7 @@ body {
 								> h2 {
 									font-size: 3.6rem;
 									margin-bottom: 0;
-									
+
 									@include range-width(0, 451px) {
 										font-size: 2.4rem
 									}
@@ -2828,7 +2946,7 @@ body {
 									> span {
 										vertical-align: baseline;
 										font-size: 2.1rem;
-										
+
 										@include range-width(0, 451px) {
 											font-size: 1.4rem
 										}
@@ -2839,7 +2957,7 @@ body {
 									margin-top: 0;
 									font-size: 1.8rem;
 									color: rgba(89, 217, 252, 1.00);
-									
+
 									@include range-width(0, 451px) {
 										font-size: 1.4rem
 									}
@@ -2853,7 +2971,7 @@ body {
 
 								text-align: left;
 								text-decoration: none;
-								
+
 								@include range-width(0, 451px) {
 									img {
 										width: auto;
@@ -2866,7 +2984,7 @@ body {
 								> h5 {
 									padding-left: 1rem;
 									font-size: 2rem;
-									
+
 									@include range-width(0, 451px) {
 										font-size: 1.2rem;
 									}
@@ -2894,7 +3012,7 @@ body {
 		@include range-width(0, 769px) {
 			max-height: 360px;
 		}
-		
+
 		@include range-width(0, 451px) {
 			max-height: 240px;
 		}
@@ -2908,7 +3026,7 @@ body {
 			@include range-width(0, 769px) {
 				height: 360px;
 			}
-			
+
 			@include range-width(0, 451px) {
 				height: 240px;
 			}
