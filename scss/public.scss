@@ -631,81 +631,81 @@ body {
 						border-top: 2px solid white;
 					}
 
-					.shdow {
-						display: none;
-
-						&.showModel {
-							display: inline-block;
-							overflow: hidden;
-						}
-
-						position: fixed;
-						z-index: 11;
-						left: 0;
-						top: 0;
-						bottom: 0;
-						right: 0;
-						width: 100%;
-						height: 100%;
-						overflow: auto;
-						background-color: rgba(33, 33, 33, .8);
-					}
-				}
-
-				.m-menu-list {
-					display: none;
-
-					&.showModel {
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
-					}
-					list-style: none;
-					padding: 0;
-					margin: 0;
-					width: 100%;
-					height: 100%;
-					position: fixed;
-					z-index: 1000;
-					left: 0;
-					top: 0;
-					bottom: 0;
-					right: 0;
-					text-align: center;
-
-					> li {
-
-						padding: 3rem;
-						> a {
-							color: white;
-							text-decoration: none;
-							z-index: 1000;
-						}
-
-						> .btn-close {
-							width: 4rem;
-							height: 4rem;
-							border: 2px solid rgba(83, 97, 131, 1.00);
-							border-radius: 50%;
-							z-index: 1000;
-							cursor: pointer;
-		
-							&:after {
-								content: 'X';
-								height: 100%;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								font-size: 2rem;
-								font-weight: bold;
-								color: rgba(165, 242, 253, 1.00);
-							}
-						}
-					}
 					
+				}				
+			}
+
+			.shdow {
+				display: none;
+
+				&.showModel {
+					display: inline-block;
+					overflow: hidden;
 				}
 
+				position: fixed;
+				z-index: 11;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(33, 33, 33, .8);
+			}
+
+			.m-menu-list {
+				display: none;
+
+				&.showModel {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				text-align: center;
+
+				> li {
+
+					padding: 3rem;
+					> a {
+						color: white;
+						text-decoration: none;
+						z-index: 1000;
+					}
+
+					> .btn-close {
+						width: 4rem;
+						height: 4rem;
+						border: 2px solid rgba(83, 97, 131, 1.00);
+						border-radius: 50%;
+						z-index: 1000;
+						cursor: pointer;
+	
+						&:after {
+							content: 'X';
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 2rem;
+							font-weight: bold;
+							color: rgba(165, 242, 253, 1.00);
+						}
+					}
+				}
 				
 			}
 
@@ -778,8 +778,6 @@ body {
 					margin-right: 5%;
 				}
 
-
-
 				.title-box {
 					text-align: right;
 					padding-right: 1rem;
@@ -801,8 +799,19 @@ body {
 
 						@include range-width(0, 451px) {
 							font-size: 1.2rem;
+							margin: 0;
 						}
 					}
+				}
+
+				.banner_title_bar {
+					@include range-width(0, 451px) {
+						height: 70px;
+						margin: 0;
+
+						
+					}
+					
 				}
 			}
 
@@ -2257,8 +2266,15 @@ body {
 					color: white;
 
 					@include range-width(0, 451px) {
+						margin: 0;
 						font-size: 1.2rem;
 					}
+				}
+			}
+
+			.title_bar_left {
+				@include range-width(0, 451px) {
+					height: 60px;
 				}
 			}
 		}
@@ -2267,6 +2283,10 @@ body {
 			overflow-y: scroll;
 			overflow-x: hidden;
 			max-height: 749px;
+
+			@include range-width(0, 451px) {
+				max-height: 400px;
+			}
 
 			&::-webkit-scrollbar {
 				width: .8rem;
@@ -2352,6 +2372,7 @@ body {
 				list-style-type: none;
 				position: relative;
 				overflow: hidden;
+				z-index: 1;
 
 				@include range-width(0, 769px) {
 					padding: 0;
@@ -2594,25 +2615,26 @@ body {
 		bottom: 7rem;
 
 		@include range-width(0, 769px) {
-			max-height: 360px;
+			max-height: 480px;
 		}
 
 		@include range-width(0, 451px) {
 			max-height: 480px;
 		}
 
-		>img {
+		img {
 			width: auto;
 			height: auto;
 			width: 100vw;
 			height: 100%;
 
 			@include range-width(0, 769px) {
-				height: 360px;
+				// height: 480px;
+				width: 100%;
 			}
 
 			@include range-width(0, 451px) {
-				height: 480px;
+				// height: 480px;
 			}
 		}
 
@@ -2657,6 +2679,10 @@ body {
 			color: white;
 			font-size: 1.4rem;
 			text-align: center;
+
+			@include range-width(0, 451px) {
+				font-size: 1.2rem;
+			}
 		}
 	}
 }

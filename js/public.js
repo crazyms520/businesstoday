@@ -125,8 +125,8 @@ $(function () {
 	});
 
 	$('.m-menu').on('click', function() {
-		$(this).find('.shdow').addClass('showModel');
-		$(this).find('.m-menu-list').addClass('showModel');
+		$('#shdow').addClass('showModel');
+		$('.m-menu-list').addClass('showModel');
 		
 	})
 
