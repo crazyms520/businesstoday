@@ -10,13 +10,13 @@
 $(function () {
 	'use strict';
 	/* loading page start */
-    // window.setTimeout(function () {
-    //     $('.loading_page').fadeOut(1000);
-    // }, 18000);
+    window.setTimeout(function () {
+        $('.loading_page').fadeOut(1000);
+    }, 18000);
 
-    // window.setInterval(function () {
-    //     $('.arrow-right').click();
-    // }, 3000);
+    window.setInterval(function () {
+        $('.arrow-right').click();
+    }, 3000);
 
     $('.loading_page_btn').on('click', function () {
         $('.loading_page').fadeOut(1000);
