@@ -285,7 +285,7 @@ body {
 			position: absolute;
 			color: rgba(80, 195, 242, 1.00);
 			font-size: 3rem;
-			top: calc(42.5% - 22.5px);
+			top: calc(36.5% - 22.5px);
 
 			@include range-width(1281px, 1441px) {
 				top: calc(42.5% - 22.5px);
@@ -308,7 +308,7 @@ body {
 			}
 
 			&.left {
-				left: 30%;
+				left: 25%;
 
 				@include range-width(1281px, 1441px) {
 					left: 15%;
@@ -332,7 +332,7 @@ body {
 			}
 
 			&.right {
-				right: 30%;
+				right: 25%;
 
 				@include range-width(1281px, 1441px) {
 					right: 15%;

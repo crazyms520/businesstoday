@@ -37,19 +37,19 @@ body .bubble > li:nth-child(7) { width: 30px; height: 30px; left: 70%; animation
 @keyframes bubble-ani2 { 0% { -webkit-transform: translateY(0); transform: translateY(0); }
   100% { -webkit-transform: translateY(-220vh); transform: translateY(-220vh); } }
 body .loading_page { display: flex; flex-direction: column; align-items: center; background-image: url(../img/loading_bg.png); background-size: cover; background-repeat: no-repeat; position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100vw; height: 100vh; z-index: 4; }
-body .loading_page .loading_pag_text { position: absolute; color: #50c3f2; font-size: 3rem; top: calc(42.5% - 22.5px); }
+body .loading_page .loading_pag_text { position: absolute; color: #50c3f2; font-size: 3rem; top: calc(36.5% - 22.5px); }
 @media screen and (max-width: 1440px) and (min-width: 1281px) { body .loading_page .loading_pag_text { top: calc(42.5% - 22.5px); } }
 @media screen and (max-width: 1280px) and (min-width: 1025px) { body .loading_page .loading_pag_text { top: calc(39.5% - 22.5px); } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { body .loading_page .loading_pag_text { top: 15%; } }
 @media screen and (max-width: 768px) and (min-width: 0) { body .loading_page .loading_pag_text { top: 15%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { body .loading_page .loading_pag_text { font-size: 2.4rem; } }
-body .loading_page .loading_pag_text.left { left: 30%; }
+body .loading_page .loading_pag_text.left { left: 25%; }
 @media screen and (max-width: 1440px) and (min-width: 1281px) { body .loading_page .loading_pag_text.left { left: 15%; } }
 @media screen and (max-width: 1280px) and (min-width: 1025px) { body .loading_page .loading_pag_text.left { left: 10%; } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { body .loading_page .loading_pag_text.left { left: 35%; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { body .loading_page .loading_pag_text.left { left: 25%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { body .loading_page .loading_pag_text.left { left: 15%; } }
-body .loading_page .loading_pag_text.right { right: 30%; }
+body .loading_page .loading_pag_text.right { right: 25%; }
 @media screen and (max-width: 1440px) and (min-width: 1281px) { body .loading_page .loading_pag_text.right { right: 15%; } }
 @media screen and (max-width: 1280px) and (min-width: 1025px) { body .loading_page .loading_pag_text.right { right: 10%; } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { body .loading_page .loading_pag_text.right { right: 35%; } }
