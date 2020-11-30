@@ -800,6 +800,7 @@ body {
 						margin-bottom: 0;
 						font-size: 2rem;
 						color: white;
+						margin: 0;
 
 						@include range-width(0, 451px) {
 							font-size: 1.2rem;
@@ -1824,8 +1825,8 @@ body {
 							left: 23%;
 
 							@include range-width(0, 451px) {
-								top: 20%;
-								left: -6%;
+								top: 21%;
+								left: 0%;
 							}
 						}
 
@@ -1835,8 +1836,8 @@ body {
 							left: 30%;
 
 							@include range-width(0, 451px) {
-								top: 57%;
-								left: -5%;
+								top: 59%;
+								left: -2%;
 							}
 						}
 
@@ -1846,7 +1847,7 @@ body {
 							left: 70%;
 
 							@include range-width(0, 451px) {
-								top: 35%;
+								top: 37%;
 								left: 83%;
 
 								.s-point-text {
@@ -1878,8 +1879,8 @@ body {
 							left: 60%;
 
 							@include range-width(0, 451px) {
-								bottom: 23%;
-								left: 72%;
+								bottom: 25%;
+								left: 73%;
 							}
 						}
 
@@ -1890,8 +1891,8 @@ body {
 							&.outer-l {
 								position: relative;
 								display: inline-block;
-								width: 6rem;
-								height: 6rem;
+								width: 4rem;
+								height: 4rem;
 								border: 2px solid rgba(116, 166, 214, 1.00);
 								border-radius: 50%;
 								margin-right: 2rem;

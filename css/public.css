@@ -120,7 +120,7 @@ body .banner .container .banner-title { position: absolute; top: 30%; right: 15%
 body .banner .container .banner-title .title-box { text-align: right; padding-right: 1rem; }
 body .banner .container .banner-title .title-box > h2 { font-size: 4rem; color: white; margin: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-title .title-box > h2 { font-size: 2.4rem; } }
-body .banner .container .banner-title .title-box > h4 { margin-bottom: 0; font-size: 2rem; color: white; }
+body .banner .container .banner-title .title-box > h4 { margin-bottom: 0; font-size: 2rem; color: white; margin: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-title .title-box > h4 { font-size: 1.2rem; margin: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-title .banner_title_bar { height: 70px; margin: 0; } }
 body .banner .container .banner-img { position: absolute; top: calc(50% - 100px); right: 0; animation: up-down 10s linear infinite; z-index: 1; }
@@ -290,18 +290,18 @@ body .sea .container .mob-container .mob-c-box .sea-point.ms-2-3 { position: abs
   body .sea .container .mob-container .mob-c-box .sea-point.ms-2-3 .s-point-text:after { content: unset !important; }
   body .sea .container .mob-container .mob-c-box .sea-point.ms-2-3 .s-point-text:before { content: ''; position: absolute; top: 0; left: -1rem; width: 0; height: 0; border-style: solid; border-width: 2.2rem 1rem 2.2rem 0; border-color: transparent #1c49ea transparent transparent; } }
 body .sea .container .mob-container .mob-c-box .sea-point.ms-3-1 { position: absolute; top: 30%; left: 23%; }
-@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-1 { top: 20%; left: -6%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-1 { top: 21%; left: 0%; } }
 body .sea .container .mob-container .mob-c-box .sea-point.ms-3-2 { position: absolute; top: 48%; left: 30%; }
-@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-2 { top: 57%; left: -5%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-2 { top: 59%; left: -2%; } }
 body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 { position: absolute; top: 48%; left: 70%; }
-@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 { top: 35%; left: 83%; }
+@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 { top: 37%; left: 83%; }
   body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 .s-point-text { position: relative; }
   body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 .s-point-text:after { content: unset !important; }
   body .sea .container .mob-container .mob-c-box .sea-point.ms-3-3 .s-point-text:before { content: ''; position: absolute; top: 0; left: -1rem; width: 0; height: 0; border-style: solid; border-width: 2.2rem 1rem 2.2rem 0; border-color: transparent #1c49ea transparent transparent; } }
 body .sea .container .mob-container .mob-c-box .sea-point.ms-3-4 { position: absolute; bottom: 17%; left: 60%; }
-@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-4 { bottom: 23%; left: 72%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { body .sea .container .mob-container .mob-c-box .sea-point.ms-3-4 { bottom: 25%; left: 73%; } }
 body .sea .container .mob-container .mob-c-box .sea-point > div { cursor: pointer; z-index: 3; }
-body .sea .container .mob-container .mob-c-box .sea-point > div.outer-l { position: relative; display: inline-block; width: 6rem; height: 6rem; border: 2px solid #74a6d6; border-radius: 50%; margin-right: 2rem; }
+body .sea .container .mob-container .mob-c-box .sea-point > div.outer-l { position: relative; display: inline-block; width: 4rem; height: 4rem; border: 2px solid #74a6d6; border-radius: 50%; margin-right: 2rem; }
 body .sea .container .mob-container .mob-c-box .sea-point > div.outer-l:hover .point { width: 1.5rem; height: 1.5rem; top: calc(50% - .75rem); left: calc(50% - .75rem); background-color: #a5f2fd; }
 body .sea .container .mob-container .mob-c-box .sea-point > div.outer-l .point { position: absolute; top: calc(50% - .4rem); left: calc(50% - .4rem); width: .8rem; height: .8rem; background-color: #a5f2fd; border-radius: 50%; }
 body .sea .container .mob-container .mob-c-box .sea-point > div.s-point-text { position: relative; font-size: 1.6rem; padding: 1rem; color: white; background-color: #1c49ea; }
