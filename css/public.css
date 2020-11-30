@@ -101,7 +101,7 @@ body header .h-box .shdow.showModel { display: inline-block; overflow: hidden; }
 body header .h-box .m-menu-list { display: none; list-style: none; padding: 0; margin: 0; width: 100%; height: 100%; position: fixed; z-index: 1000; left: 0; top: 0; bottom: 0; right: 0; text-align: center; }
 body header .h-box .m-menu-list.showModel { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 body header .h-box .m-menu-list > li { padding: 3rem; }
-body header .h-box .m-menu-list > li > a { color: white; text-decoration: none; z-index: 1000; }
+body header .h-box .m-menu-list > li > a { color: white; text-decoration: none; z-index: 1000; font-size: 1.6rem; }
 body header .h-box .m-menu-list > li > .btn-close { width: 4rem; height: 4rem; border: 2px solid #536183; border-radius: 50%; z-index: 1000; cursor: pointer; }
 body header .h-box .m-menu-list > li > .btn-close:after { content: 'X'; height: 100%; display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: bold; color: #a5f2fd; }
 body header .h-box nav.menu { font-size: 1.6rem; }
@@ -111,6 +111,7 @@ body header .h-box nav.menu > ul > li { padding: 1.5rem 3rem; vertical-align: mi
 body header .h-box nav.menu > ul > li > a { color: white; text-decoration: none; }
 body .banner { position: relative; background-image: url(../img/banner_bg.png); background-size: cover; background-position: bottom; width: 100vw; height: 959px; background-color: #082055; }
 @media screen and (max-width: 1024px) and (min-width: 768px) { body .banner { height: 100vh; } }
+@media screen and (max-width: 450px) and (min-width: 0) { body .banner { height: 100vh; } }
 body .banner .container { position: relative; padding-top: 10rem; height: 100vh; }
 body .banner .container .banner-title { position: absolute; top: 30%; right: 15%; display: flex; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { body .banner .container .banner-title { top: 20%; } }
@@ -122,7 +123,7 @@ body .banner .container .banner-title .title-box > h2 { font-size: 4rem; color: 
 body .banner .container .banner-title .title-box > h4 { margin-bottom: 0; font-size: 2rem; color: white; }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-title .title-box > h4 { font-size: 1.2rem; margin: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-title .banner_title_bar { height: 70px; margin: 0; } }
-body .banner .container .banner-img { position: absolute; top: calc(50% - 100px); right: 0; animation: up-down 10s linear infinite; }
+body .banner .container .banner-img { position: absolute; top: calc(50% - 100px); right: 0; animation: up-down 10s linear infinite; z-index: 1; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { body .banner .container .banner-img { right: 1rem; } }
 @media screen and (max-width: 768px) and (min-width: 0) { body .banner .container .banner-img { top: 30%; } }
 body .banner .container .banner-img img { width: auto; height: auto; max-width: 900px; max-height: 100%; }
@@ -162,7 +163,7 @@ body .banner .container .banner-img .map-icon.m7.active { top: 65%; }
   60% { -webkit-transform: translateY(-15px); transform: translateY(-15px); }
   80% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
   100% { -webkit-transform: translateY(0); transform: translateY(0); } }
-body .banner .container .banner-text { position: absolute; bottom: 15%; }
+body .banner .container .banner-text { position: absolute; bottom: 15%; z-index: 1; }
 @media screen and (max-width: 1024px) and (min-width: 768px) { body .banner .container .banner-text { bottom: 10%; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { body .banner .container .banner-text { left: calc(50% - 151px); } }
 @media screen and (max-width: 450px) and (min-width: 0) { body .banner .container .banner-text { bottom: 0; margin: 0 2rem; } }
@@ -411,15 +412,15 @@ body .history .history-content ul#time-line > li > div > .t-l-box > a { display:
 body .history .history-content ul#time-line > li > div > .t-l-box > a > h5 { padding-left: 1rem; font-size: 2rem; }
 @media screen and (max-width: 450px) and (min-width: 0) { body .history .history-content ul#time-line > li > div > .t-l-box > a > h5 { font-size: 1.2rem; } }
 body footer { position: relative; background-image: url(../img/bottom_bg.png); background-size: cover; background-repeat: no-repeat; background-position: 25% 10%; width: 100vw; height: 100vh; max-height: 480px; bottom: 7rem; }
-@media screen and (max-width: 768px) and (min-width: 0) { body footer { max-height: 480px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { body footer { max-height: 480px; } }
-body footer img { width: auto; height: auto; width: 100vw; height: 100%; }
-@media screen and (max-width: 768px) and (min-width: 0) { body footer img { width: 100%; } }
+body footer > img { width: auto; height: auto; max-width: 100vw; max-height: 480px; }
+@media screen and (max-width: 1440px) and (min-width: 0) { body footer > img { height: 480px; } }
+@media screen and (max-width: 768px) and (min-width: 0) { body footer > img { height: 360px; max-width: 100%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { body footer > img { height: 480px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { body footer > .container { position: absolute; top: 30%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { body footer > .container { position: absolute; top: 10%; left: calc(50% - 140px); } }
-body footer .footer-img { position: absolute; top: calc(50% - 143.5px); }
+body footer .footer-img { position: absolute; top: 25%; }
 @media screen and (max-width: 768px) and (min-width: 0) { body footer .footer-img { position: relative; top: 0; } }
-body footer .footer-img > img { width: auto; height: auto; max-width: 100vw; max-height: 480px; }
-@media screen and (max-width: 768px) and (min-width: 0) { body footer .footer-img > img { max-height: 100%; max-width: 100%; } }
+body footer .footer-img img { width: auto; height: auto; max-width: 100vw; max-height: 480px; }
+@media screen and (max-width: 1024px) and (min-width: 0) { body footer .footer-img img { max-height: 100%; max-width: 100%; } }
 body footer .copy { padding: 5rem 0; background-color: #082055; color: white; font-size: 1.4rem; text-align: center; }
 @media screen and (max-width: 450px) and (min-width: 0) { body footer .copy { font-size: 1.2rem; } }

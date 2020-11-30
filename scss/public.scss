@@ -684,6 +684,7 @@ body {
 						color: white;
 						text-decoration: none;
 						z-index: 1000;
+						font-size: 1.6rem;
 					}
 
 					> .btn-close {
@@ -748,6 +749,9 @@ body {
 		background-color: rgba(8, 32, 85, 1.00);
 
 		@include range-width(768px, 1025px) {
+			height: 100vh;
+		}
+		@include range-width(0, 451px) {
 			height: 100vh;
 		}
 
@@ -820,6 +824,7 @@ body {
 				top: calc(50% - 100px);
 				right: 0;
 				animation: up-down 10s linear infinite;
+				z-index: 1;
 
 
 				@include range-width(769px, 1025px) {
@@ -1009,6 +1014,7 @@ body {
 			.banner-text {
 				position: absolute;
 				bottom: 15%;
+				z-index: 1;
 
 				@include range-width(768px, 1025px) {
 					bottom: 10%;
@@ -2614,27 +2620,23 @@ body {
 		max-height: 480px;
 		bottom: 7rem;
 
-		@include range-width(0, 769px) {
-			max-height: 480px;
-		}
-
-		@include range-width(0, 451px) {
-			max-height: 480px;
-		}
-
-		img {
+		> img {
 			width: auto;
 			height: auto;
-			width: 100vw;
-			height: 100%;
+			max-width: 100vw;
+			max-height: 480px;
+
+			@include range-width(0, 1441px) {
+				height: 480px;
+			}
 
 			@include range-width(0, 769px) {
-				// height: 480px;
-				width: 100%;
+				height: 360px;
+				max-width: 100%;
 			}
 
 			@include range-width(0, 451px) {
-				// height: 480px;
+				height: 480px;
 			}
 		}
 
@@ -2653,20 +2655,20 @@ body {
 
 		.footer-img {
 			position: absolute;
-			top: calc(50% - 143.5px);
+			top: 25%;
 
 			@include range-width(0, 769px) {
 				position: relative;
 				top: 0;
 			}
 
-			>img {
+			img {
 				width: auto;
 				height: auto;
 				max-width: 100vw;
 				max-height: 480px;
 
-				@include range-width(0, 769px) {
+				@include range-width(0, 1025px) {
 					max-height: 100%;
 					max-width: 100%;
 				}
