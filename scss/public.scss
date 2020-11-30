@@ -2636,6 +2636,8 @@ body {
 			}
 
 			@include range-width(0, 451px) {
+				object-fit: cover;
+				object-position: 30%;
 				height: 480px;
 			}
 		}
